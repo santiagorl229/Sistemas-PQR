@@ -1,6 +1,7 @@
 import { UserModel } from './user.model';
 import { USER_MODEL_PROVIDER, DB_PROVIDER, SOLICITUD_MODEL_PROVIDER, TIPO_SOLICITUD_MODEL_PROVIDER, ROLES_MODEL_PROVIDER } from '@constants';
 import { RolesModel } from './rol.model';
+import { TipoSolicitudModel } from './tipoSolicitud';
 
 
 export const userProviders = [{
@@ -13,13 +14,13 @@ export const userProviders = [{
   provide: SOLICITUD_MODEL_PROVIDER,
   useValue: SolicitudModel,
   inject: [DB_PROVIDER]
-}];
+}];*/
 
 export const tiposolicitudProviders = [{
   provide: TIPO_SOLICITUD_MODEL_PROVIDER,
   useValue: TipoSolicitudModel,
   inject: [DB_PROVIDER]
-}]; */
+}]; 
 
 export const rolesProviders =[{
   provide: ROLES_MODEL_PROVIDER,
