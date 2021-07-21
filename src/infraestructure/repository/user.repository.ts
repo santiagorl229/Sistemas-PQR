@@ -17,13 +17,10 @@ export class UserRepository{
             if(!findRol){
                 return false;
             }
-            console.log(myUser)
                     //Se hastea la contraseña
             let genPassword = await bcrypt.genSaltSync(10);      
             let password = await this.hashPassword(myUser.password, genPassword);
             myUser.password =password;
-            console.log("Llega aqui")
-            console.log(myUser.password)
 
             let UserFinal = (userFind)? userFind: myUser;
             if(userFind){

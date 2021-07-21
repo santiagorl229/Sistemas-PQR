@@ -4,7 +4,7 @@ export class Solicitud{
     readonly _id?: string;
     
     @IsNotEmpty()
-    numeroRadicado: bigint;
+    numeroRadicado: string;
 
     @IsNotEmpty()
     fechaCreacion: Date;

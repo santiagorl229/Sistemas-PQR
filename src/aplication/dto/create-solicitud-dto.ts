@@ -3,7 +3,7 @@ import { IsNotEmpty, IsString } from "class-validator";
 export class CreateSolicituDto{
 
     @IsNotEmpty()
-    numeroRadicado: bigint;
+    numeroRadicado: string;
 
     @IsNotEmpty()
     fechaCreacion: Date;

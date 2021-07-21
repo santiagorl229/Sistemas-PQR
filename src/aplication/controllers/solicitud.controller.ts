@@ -10,3 +10,4 @@ export class SolicitudController{
     async createSolicitud(@Body() createSolicitudDto: CreateSolicituDto): Promise<any>{
          return this.solicitudService.createSolicitud(createSolicitudDto);
     }
+}

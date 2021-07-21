@@ -5,7 +5,7 @@ import { Document,model, Schema } from "mongoose";
 
 export class solicitudModel{
     _id?: string;
-    numeroRadicado: bigint;
+    numeroRadicado: string;
     fechaCreacion: Date;
     userIdCreated: string;
     userIdAttend: string;
@@ -30,7 +30,7 @@ export class solicitudModel{
 }
   var schema = new Schema({
     _id: { required: true, type: String},
-    numeroRadicado: { required: true, type: BigInt },
+    numeroRadicado: { required: true, type: String },
     fechaCreacion: {type: Date, default: Date.now},
     userIdCreated : {required: true, type: String },
     userIdAttend : {required: true, type: String },

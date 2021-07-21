@@ -8,6 +8,6 @@ export class SolicitudService{
 
     async createSolicitud(createSolicitudDto: CreateSolicituDto): Promise<any>{
         return this.solicitudRepository.createSolicitud(createSolicitudDto)
-     }
+    }
     
 }
