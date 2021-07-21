@@ -12,6 +12,6 @@ export class CreateUserDto{
     password: string;
 
     @IsNotEmpty()
-    rol: Roles["_id"];
+    roles: Roles["_id"];
     
 }

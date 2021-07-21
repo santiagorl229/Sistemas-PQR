@@ -8,7 +8,7 @@ export class UserModel{
     _id?: string;
     name: string;
     password: string;
-    rol: Roles["_id"];
+    rol: string;
         
    constructor(user: CreateUserDto | any){
     this._id = faker.random.uuid();
